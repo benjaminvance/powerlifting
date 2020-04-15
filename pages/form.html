@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Powerlifting Basics Coaching</title>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Powerlifting Basics" />
+    <meta name="keywords" content="Powerlifting,Working,Out,Nutrition" />
+    <meta name="author" content="Benjamin Vance" />
+    <link rel="stylesheet" type="text/css" href="../VanceBenStylesheet.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="title">
+        <h3 onmouseover="style.color='blue'" onmouseout="style.color='white'">
+          Powerlifting Basics Coaching
+        </h3>
+      </div>
+      <div class="buttons">
+        <a href="../VanceBenjaminHomePage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="table.html">Table</a>
+        <a class="active" href="form.html">Coaching Form</a>
+      </div>
+    </div>
+    <h3 onmouseover="style.color='blue'" onmouseout="style.color='white'">
+      Interested in a specific workout plan?
+    </h3>
+    <p>
+      Enter your information here to hear back from us about what we can do for
+      you!
+    </p>
+    <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+      <fieldset>
+        <legend>Full Name</legend>
+        First name:<br />
+        <input type="text" name="firstname" /><br />
+        Last name:<br />
+        <input type="text" name="lastname" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Lifting Experience</legend>
+        How experienced of a lifter are you: <br />
+        <input type="radio" name="lifter" value="beginner" checked />
+        Beginner<br />
+        <input type="radio" name="lifter" value="Intermediate" />
+        Intermediate<br />
+        <input type="radio" name="lifter" value="expert" /> Expert <br />
+      </fieldset>
+      <fieldset>
+        <legend>Current Program</legend>
+        Which lifts do you currently do:<br />
+        <input type="checkbox" name="lifts" value="Bench" />Bench<br />
+        <input type="checkbox" name="lifts" value="Squat" />Squat<br />
+        <input type="checkbox" name="lifts" value="Deadlift" />Deadlift<br />
+        <input type="checkbox" name="lifts" value="Overhead Press" />Overhead
+        Press<br />
+      </fieldset>
+      <fieldset>
+        <legend>Current Program</legend>
+        How many days per week do you workout:<br />
+        <select name="workouts">
+          <option value="day12">1-2 Days Per Week</option>
+          <option value="day34">3-4 Days Per Week</option>
+          <option value="day57">5-7 Days Per Week</option> </select
+        ><br />
+      </fieldset>
+      <fieldset>
+        <legend>Specific Needs</legend>
+        <textarea name="comments" rows="15" cols="120">
+        Enter any additional information about your workouts, diet or injuries you may have. What your lifting goals are and anything you would want your coach to know about...
+        </textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Submit Your Form</legend>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
